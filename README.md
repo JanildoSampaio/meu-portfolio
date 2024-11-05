@@ -1,7 +1,5 @@
 # Portfólio - Janildo's
 
-![Logo do Portfólio](./public/logo.png)
-
 ## 💻 Sobre o Projeto
 
 Portfólio profissional desenvolvido com React, destacando minhas habilidades como Front-End Developer. O projeto foi criado com foco em design moderno e código limpo, demonstrando minha busca constante por conhecimento e excelência na criação de soluções web.
