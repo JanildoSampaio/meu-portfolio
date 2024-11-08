@@ -1,33 +1,13 @@
-import { useState } from "react";
-import {
-  Container,
-  Nav,
-  Image,
-  Ul,
-  Li,
-  Hero,
-  H1,
-  P,
-  ImageProfile,
-  About,
-} from "./styles";
+import { React } from "react";
+import { Container, Hero, H1, P, ImageProfile, About } from "./styles";
 
-import Logo from "../../assets/Janildologo.png";
 import Profile from "../../assets/janildoperfil.png";
+import Header from "../../components";
 
 const Home = () => {
-  const [count, setCount] = useState(0);
   return (
     <Container>
-      <Nav>
-        <Image src={Logo} alt="Logo" />
-        <Ul>
-          <Li>Inicio</Li>
-          <Li>Sobre</Li>
-          <Li>Projetos</Li>
-        </Ul>
-      </Nav>
-
+      <Header />
       <Hero>
         <H1>
           Front-End <span>Developer</span>
@@ -39,7 +19,11 @@ const Home = () => {
       </Hero>
       <About>
         <p>
-        Movido pela busca constante de conhecimento e pela oportunidade de criar<br/> soluções que combinem excelência visual com código limpo e eficiente. <br></br><span>Saiba Mais...</span> 
+          Movido pela busca constante de conhecimento e pela oportunidade de
+          criar
+          <br /> soluções que combinem excelência visual com código limpo e
+          eficiente. <br></br>
+          <span>Saiba Mais...</span>
         </p>
       </About>
     </Container>
