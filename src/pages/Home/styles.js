@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-  padding: 1rem;  
+  padding: 1rem;
 `;
 
 export const Hero = styled.div`
@@ -29,6 +29,7 @@ export const P = styled.p`
   font-weight: 600;
   color: #000;
   text-align: center;
+
   span {
     color: #6e07f3;
   }
@@ -65,14 +66,58 @@ export const About = styled.div`
 
     span {
       color: #6e07f3;
-      cursor: pointer;      
-      text-decoration: underline;
-      
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
       &:hover {
-        transform: scaleX(1.1);
-        transition: 0.3s;
-        filter: drop-shadow(0 0 0.75rem #000000);
+        filter: drop-shadow(0 0 0.75rem #6e07f3);
+        text-decoration: underline;
       }
     }
+  }
+`;
+
+export const SocialMedia = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 15vh;
+  cursor: pointer;
+
+  svg {
+    font-size: 2rem;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+
+    &:hover:nth-child(1) {
+      color: blue;
+      transform: scale(1.5);
+    }
+    &:hover:nth-child(2) {
+      color: black;
+      transform: scale(1.5);
+    }
+    &:hover:nth-child(3) {
+      color: green;
+      transform: scale(1.5);
+    }
+    &:hover:nth-child(4) {
+      color: red;
+      transform: scale(1.5);
+    }
+  }
+`;
+
+export const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
   }
 `;
