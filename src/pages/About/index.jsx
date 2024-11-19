@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "../../components/navbar";
 
-import { Container, Me, Stack, Philosophy, Learning, StyledHtml, StyledCss, StyledJs, StyledReact,  } from "../About/styles";
+import { Container, Me, Stack, Philosophy, Learning, StyledHtml, StyledCss, StyledJs, StyledReact, StyledNode } from "../About/styles";
+
 
 
 const About = () => {
@@ -24,7 +25,8 @@ const About = () => {
           <li><StyledHtml/></li>
           <li><StyledCss/></li>
           <li><StyledJs/></li>
-          <li><StyledReact/></li>          
+          <li><StyledReact/></li> 
+          <li><StyledNode/></li>         
         </ul>
         <ul>
           

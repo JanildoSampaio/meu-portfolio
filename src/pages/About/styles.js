@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact  } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs  } from "react-icons/fa";
 
 export const Container = styled.div`
     width: 100%;
@@ -102,6 +102,15 @@ export const StyledReact = styled(FaReact)`
     &:hover {
         transform: scale(1.4);
         transition: 0.5s;       
+    }
+`
+
+export const StyledNode = styled(FaNodeJs)`
+    font-size: 3rem;
+    color: #3c873a;
+    &:hover {
+        transform: scale(1.4);
+        transition: 0.5s;
     }
 `
 
