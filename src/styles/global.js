@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -9,5 +9,15 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'europa', sans-serif;
     }
 
+    body {
+        overflow-x: hidden;
+        position: relative;
+    }
 
-`
+    #root {
+        position: relative;
+        min-height: 100vh;
+    }
+
+
+`;

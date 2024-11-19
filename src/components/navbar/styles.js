@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import device from "../../styles/breakpoint";
 
 export const Nav = styled.div`
   display: flex;
@@ -9,6 +10,7 @@ export const Nav = styled.div`
 export const Image = styled.img`
   width: 6rem;
   cursor: pointer;
+
   &:hover {
     transform: scale(1.1);
     transition: 0.3s;
@@ -17,6 +19,12 @@ export const Image = styled.img`
   &:active {
     opacity: 0.5;
   }
+
+  @media ${device.mobile} {
+    width: 4rem;
+    margin: 0 auto;    
+  }
+
 `;
 export const Ul = styled.ul`
   display: flex;
@@ -37,5 +45,9 @@ export const Li = styled.li`
 
   &:active {
     opacity: 0.5;    
+  }
+
+  @media  ${device.mobile} {
+      display: none;
   }
 `;

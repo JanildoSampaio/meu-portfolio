@@ -1,4 +1,4 @@
-import { React } from "react";
+import  React from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Container,
@@ -11,14 +11,14 @@ import {
   Footer,
 } from "./styles";
 
+
 import Profile from "../../assets/janildoperfil.png";
 import { FaLinkedin, FaGithub, FaWhatsapp, FaInstagram } from "react-icons/fa";
-import Header from "../../components";
+import Header from "../../components/navbar";
 
 const Home = () => {
   const navigate = useNavigate();
-
-  return (
+  return (  
     <Container>
       <Header />
       <Hero>
@@ -36,14 +36,14 @@ const Home = () => {
           criar
           <br /> soluções que combinem excelência visual com código limpo e
           eficiente. <br />
-          <span onClick={() => navigate("/sobre")}>Saiba Mais...</span>
+          <button onClick={() => navigate("/sobre")} >Saiba Mais...</button>
         </p>
       </About>
       <SocialMedia>
-        <FaLinkedin />
-        <FaGithub />
-        <FaWhatsapp />
-        <FaInstagram />
+        <a href="https://www.linkedin.com/in/janildo-sampaio-cardoso/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+        <a href="https://github.com/JanildoSampaio" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+        <a href="http://wa.me/5585992127411?text=Seja bem vindo(a) Vamos conversar ?!  !" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+        <a href="https://www.instagram.com/janildosampaio/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
       </SocialMedia>
 
       <Footer>

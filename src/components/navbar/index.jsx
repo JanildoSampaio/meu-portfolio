@@ -1,6 +1,6 @@
 
 import { useNavigate, useLocation } from "react-router-dom";
-import Logo from "../assets/Janildologo.png";
+import Logo from "../../assets/Janildologo.png";
 import { Nav, Image, Ul, Li } from "./styles";
 
 const Header = () => {

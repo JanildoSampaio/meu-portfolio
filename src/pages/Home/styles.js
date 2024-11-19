@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import device from "../../styles/breakpoint";
 
 export const Container = styled.div`
   width: 100%;
@@ -22,6 +23,10 @@ export const H1 = styled.h1`
   span {
     color: #6e07f3;
   }
+
+  @media ${device.mobile} {
+    font-size: 1rem;
+  }
 `;
 
 export const P = styled.p`
@@ -32,6 +37,10 @@ export const P = styled.p`
 
   span {
     color: #6e07f3;
+  }
+
+  @media ${device.mobile} {
+    font-size: 1rem;
   }
 `;
 
@@ -50,6 +59,11 @@ export const ImageProfile = styled.img`
   &:active {
     opacity: 0.5;
   }
+
+  @media ${device.mobile} {
+    width: 10rem;
+    height: 10rem;  
+  }
 `;
 
 export const About = styled.div`
@@ -64,13 +78,21 @@ export const About = styled.div`
     color: #000;
     text-align: center;
 
-    span {
+    @media ${device.mobile} {
+      font-size: 1rem;
+    }
+
+    button {
       color: #6e07f3;
+      font-size: 1.2rem;
+      font-weight: 600;
+      background-color: transparent;
+      border: none;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
 
-      &:hover {
-        filter: drop-shadow(0 0 0.75rem #6e07f3);
+      &:hover { 
+        scale: 1.2;       
         text-decoration: underline;
       }
     }
@@ -83,27 +105,31 @@ export const SocialMedia = styled.div`
   align-items: center;
   gap: 1rem;
   height: 15vh;
-  cursor: pointer;
-
-  svg {
+  
+  a {
+    cursor: pointer;
+    text-decoration: none;
+ 
+  svg  {
     font-size: 2rem;
     color: #000;
     transition: all 0.3s ease-in-out;
+  }
 
-    &:hover:nth-child(1) {
-      color: blue;
+    &:nth-child(1):hover svg {
+      color: #004dff;
       transform: scale(1.5);
     }
-    &:hover:nth-child(2) {
-      color: black;
+    &:nth-child(2):hover svg {
+      color: #000000;
       transform: scale(1.5);
     }
-    &:hover:nth-child(3) {
-      color: green;
+    &:nth-child(3):hover svg {
+      color: #33ff42;
       transform: scale(1.5);
     }
-    &:hover:nth-child(4) {
-      color: red;
+    &:nth-child(4):hover svg {
+      color: #ff0000;
       transform: scale(1.5);
     }
   }
@@ -114,10 +140,15 @@ export const Footer = styled.footer`
   justify-content: center;
   align-items: center;
 
-  p{
+  p {
     font-size: 1.3rem;
     font-weight: 600;
     color: #000;
     text-align: center;
+
+    @media ${device.mobile} {
+      height: 10vh;
+      font-size: 1rem;
+    }
   }
 `;
