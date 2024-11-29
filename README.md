@@ -41,7 +41,7 @@ portfolio/
 - [x] Seção Sobre
 - [x] Seção Projetos
 - [ ] Modo escuro/claro
-- [ ] Animações de transição
+- [x] Animações de transição
 
 ## 🤝 Como Contribuir
 
