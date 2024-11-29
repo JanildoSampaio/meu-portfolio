@@ -38,8 +38,8 @@ portfolio/
 - [x] Página Home responsiva
 - [x] Navegação entre seções
 - [x] Componentes estilizados com Styled Components
-- [ ] Seção Sobre
-- [ ] Seção Projetos
+- [x] Seção Sobre
+- [x] Seção Projetos
 - [ ] Modo escuro/claro
 - [ ] Animações de transição
 
@@ -57,4 +57,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 📫 Contato
 
-Janildo - [LinkedIn](seu-linkedin) - seu-email@email.com
+Janildo - [LinkedIn](seu-https://www.linkedin.com/in/janildo-sampaio-cardoso/) - janildoscdev@email.com

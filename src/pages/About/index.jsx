@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/navbar";
 
+
 import { Container, Me, Stack, Philosophy, Learning, StyledHtml, StyledCss, StyledJs, StyledReact, StyledNode } from "../About/styles";
 
 
@@ -9,6 +10,7 @@ const About = () => {
   return (
     <Container>
       <Header />
+
       <Me>
         <h1>Sobre Mim</h1>
         <p>

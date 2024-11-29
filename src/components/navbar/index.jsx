@@ -1,4 +1,4 @@
-
+import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Logo from "../../assets/Janildologo.png";
 import { Nav, Image, Ul, Li } from "./styles";
@@ -15,8 +15,9 @@ const Header = () => {
       <Li onClick={() => navigate("/")} className={location.pathname === "/" ? "active" : ""} >Inicio</Li>
       <Li onClick={() => navigate("/sobre")} className={location.pathname === "/sobre" ? "active" : ""} >Sobre</Li>
       <Li onClick={() => navigate("/projetos")} className={location.pathname === "/projetos" ? "active" : ""} >Projetos</Li>
-    </Ul>
+    </Ul>    
     </Nav>
+    
   );
 }
 

@@ -16,6 +16,7 @@ import Profile from "../../assets/janildoperfil.png";
 import { FaLinkedin, FaGithub, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import Header from "../../components/navbar";
 
+
 const Home = () => {
   const navigate = useNavigate();
   return (  

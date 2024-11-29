@@ -4,6 +4,7 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   padding: 1rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
 `;
 
 export const H1 = styled.h1`
@@ -11,7 +12,6 @@ export const H1 = styled.h1`
   margin-top: 2rem;
   font-size: 2.5rem;
   font-weight: bold;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
 `;
 
 export const CardProject = styled.div`
@@ -83,3 +83,4 @@ export const Button = styled.button`
     color: #fff;
   }
 `;
+

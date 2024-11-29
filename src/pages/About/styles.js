@@ -6,6 +6,8 @@ export const Container = styled.div`
     height: 100%;
     padding: 1rem;
 
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+
 `
 
 export const Me = styled.div`
@@ -16,11 +18,12 @@ export const Me = styled.div`
     gap: .5rem;
     
     
+    
     h1{
         font-size: 2rem;
         font-weight: 600;        
         margin-bottom: 1rem;
-        margin-top: 5rem;
+        margin-top: 5rem;        
         @media (max-width: 768px) {
             font-size: 1.5rem;            
         }

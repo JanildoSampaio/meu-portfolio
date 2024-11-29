@@ -5,6 +5,8 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   padding: 1rem;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
 `;
 
 export const Hero = styled.div`
@@ -20,6 +22,7 @@ export const H1 = styled.h1`
   font-weight: 600;
   color: #000;
   text-align: center;
+  
   span {
     color: #6e07f3;
   }
@@ -34,6 +37,7 @@ export const P = styled.p`
   font-weight: 600;
   color: #000;
   text-align: center;
+ 
 
   span {
     color: #6e07f3;
@@ -77,6 +81,7 @@ export const About = styled.div`
     font-weight: 600;
     color: #000;
     text-align: center;
+
 
     @media ${device.mobile} {
       font-size: 1rem;
