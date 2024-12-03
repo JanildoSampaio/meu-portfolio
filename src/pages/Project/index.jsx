@@ -12,6 +12,9 @@ import {
 } from "./styles";
 
 const Projects = () => {
+  
+ 
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -27,7 +30,7 @@ const Projects = () => {
             <Button>Saiba Mais</Button>
           </CardProject1>
           <CardProject2>
-            <Button>Saiba Mais</Button>
+            <Button >Saiba Mais</Button>
           </CardProject2>
           <CardProject3>
             <Button>Saiba Mais</Button>
